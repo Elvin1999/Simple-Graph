@@ -109,60 +109,109 @@
      X2="950" Y2="600"
      Stroke="Gray"
      StrokeThickness="2"/>
-        </Canvas>
+      
       <!--I start to draw graph-->
         <Line
      X1="{Binding AllGraphLines[0].Start.X}" Y1="{Binding AllGraphLines[0].Start.Y}"
      X2="{Binding AllGraphLines[0].Last.X}" Y2="{Binding AllGraphLines[0].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[0].Last.X}"
+                  Panel.ZIndex="10"  Background="Red"   Canvas.Top="{Binding AllGraphLines[0].Last.Y}"
+                    Cursor="Hand"   >
+           
+        </Button>
         <Line
      X1="{Binding AllGraphLines[1].Start.X}" Y1="{Binding AllGraphLines[1].Start.Y}"
      X2="{Binding AllGraphLines[1].Last.X}" Y2="{Binding AllGraphLines[1].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[1].Last.X}"
+               Panel.ZIndex="10"    Background="Red"   Canvas.Top="{Binding AllGraphLines[1].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[2].Start.X}" Y1="{Binding AllGraphLines[2].Start.Y}"
      X2="{Binding AllGraphLines[2].Last.X}" Y2="{Binding AllGraphLines[2].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[2].Last.X}"
+                 Panel.ZIndex="10"   Background="Red"   Canvas.Top="{Binding AllGraphLines[2].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[3].Start.X}" Y1="{Binding AllGraphLines[3].Start.Y}"
      X2="{Binding AllGraphLines[3].Last.X}" Y2="{Binding AllGraphLines[3].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[3].Last.X}"
+                Panel.ZIndex="10"    Background="Red"   Canvas.Top="{Binding AllGraphLines[3].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[4].Start.X}" Y1="{Binding AllGraphLines[4].Start.Y}"
      X2="{Binding AllGraphLines[4].Last.X}" Y2="{Binding AllGraphLines[4].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[4].Last.X}"
+                 Panel.ZIndex="10"   Background="Red"   Canvas.Top="{Binding AllGraphLines[4].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[5].Start.X}" Y1="{Binding AllGraphLines[5].Start.Y}"
      X2="{Binding AllGraphLines[5].Last.X}" Y2="{Binding AllGraphLines[5].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[5].Last.X}"
+                  Panel.ZIndex="10"  Background="Red"   Canvas.Top="{Binding AllGraphLines[5].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[6].Start.X}" Y1="{Binding AllGraphLines[6].Start.Y}"
      X2="{Binding AllGraphLines[6].Last.X}" Y2="{Binding AllGraphLines[6].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[6].Last.X}"
+                 Panel.ZIndex="10"   Background="Red"   Canvas.Top="{Binding AllGraphLines[6].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[7].Start.X}" Y1="{Binding AllGraphLines[7].Start.Y}"
      X2="{Binding AllGraphLines[7].Last.X}" Y2="{Binding AllGraphLines[7].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[7].Last.X}"
+                   Panel.ZIndex="10" Background="Red"   Canvas.Top="{Binding AllGraphLines[7].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[8].Start.X}" Y1="{Binding AllGraphLines[8].Start.Y}"
      X2="{Binding AllGraphLines[8].Last.X}" Y2="{Binding AllGraphLines[8].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[8].Last.X}"
+                  Panel.ZIndex="10"  Background="Red"   Canvas.Top="{Binding AllGraphLines[8].Last.Y}"
+                    Cursor="Hand"   >
+
+            </Button>
+            <Line
      X1="{Binding AllGraphLines[9].Start.X}" Y1="{Binding AllGraphLines[9].Start.Y}"
      X2="{Binding AllGraphLines[9].Last.X}" Y2="{Binding AllGraphLines[9].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-       
+            <Button Width="10"  Height="10" Canvas.Left="{Binding AllGraphLines[9].Last.X}"
+                  Panel.ZIndex="10"  Background="Red"   Canvas.Top="{Binding AllGraphLines[9].Last.Y}"
+                    Cursor="Hand"   >
 
+            </Button>
+
+        </Canvas>
     </Grid>
 </Window>
