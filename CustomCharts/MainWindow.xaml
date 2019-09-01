@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CustomCharts"
-        mc:Ignorable="d"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="700" Width="1024">
     <Grid>
+     
         <StackPanel Margin="90,70,0,0" HorizontalAlignment="Left">
             <Label Margin="0,0,0,0" Width="70" Height="40" Content="100%" FontSize="20">
 
@@ -43,7 +44,6 @@
             </Label>
         </StackPanel>
         <Canvas>
-
             <Rectangle 
                        Width="800" Height="500" Fill="LightCyan"
                        >
@@ -112,54 +112,57 @@
         </Canvas>
       <!--I start to draw graph-->
         <Line
-     X1="150" Y1="600"
-     X2="220" Y2="560"
+     X1="{Binding AllGraphLines[0].Start.X}" Y1="{Binding AllGraphLines[0].Start.Y}"
+     X2="{Binding AllGraphLines[0].Last.X}" Y2="{Binding AllGraphLines[0].Last.Y}"
+     Stroke="Yellow"
+     StrokeThickness="4"/>
+        
+        <Line
+     X1="{Binding AllGraphLines[1].Start.X}" Y1="{Binding AllGraphLines[1].Start.Y}"
+     X2="{Binding AllGraphLines[1].Last.X}" Y2="{Binding AllGraphLines[1].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="220" Y1="560"
-     X2="290" Y2="475"
+     X1="{Binding AllGraphLines[2].Start.X}" Y1="{Binding AllGraphLines[2].Start.Y}"
+     X2="{Binding AllGraphLines[2].Last.X}" Y2="{Binding AllGraphLines[2].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="290" Y1="475"
-     X2="360" Y2="520"
+     X1="{Binding AllGraphLines[3].Start.X}" Y1="{Binding AllGraphLines[3].Start.Y}"
+     X2="{Binding AllGraphLines[3].Last.X}" Y2="{Binding AllGraphLines[3].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="360" Y1="520"
-     X2="430" Y2="270"
+     X1="{Binding AllGraphLines[4].Start.X}" Y1="{Binding AllGraphLines[4].Start.Y}"
+     X2="{Binding AllGraphLines[4].Last.X}" Y2="{Binding AllGraphLines[4].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="430" Y1="270"
-     X2="500" Y2="350"
+     X1="{Binding AllGraphLines[5].Start.X}" Y1="{Binding AllGraphLines[5].Start.Y}"
+     X2="{Binding AllGraphLines[5].Last.X}" Y2="{Binding AllGraphLines[5].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="500" Y1="350"
-     X2="570" Y2="395"
+     X1="{Binding AllGraphLines[6].Start.X}" Y1="{Binding AllGraphLines[6].Start.Y}"
+     X2="{Binding AllGraphLines[6].Last.X}" Y2="{Binding AllGraphLines[6].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="570" Y1="395"
-     X2="640" Y2="558"
+     X1="{Binding AllGraphLines[7].Start.X}" Y1="{Binding AllGraphLines[7].Start.Y}"
+     X2="{Binding AllGraphLines[7].Last.X}" Y2="{Binding AllGraphLines[7].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="640" Y1="558"
-     X2="710" Y2="100"
+     X1="{Binding AllGraphLines[8].Start.X}" Y1="{Binding AllGraphLines[8].Start.Y}"
+     X2="{Binding AllGraphLines[8].Last.X}" Y2="{Binding AllGraphLines[8].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
         <Line
-     X1="710" Y1="100"
-     X2="780" Y2="145"
+     X1="{Binding AllGraphLines[9].Start.X}" Y1="{Binding AllGraphLines[9].Start.Y}"
+     X2="{Binding AllGraphLines[9].Last.X}" Y2="{Binding AllGraphLines[9].Last.Y}"
      Stroke="Yellow"
      StrokeThickness="4"/>
-        <Line
-     X1="780" Y1="145"
-     X2="850" Y2="185"
-     Stroke="Yellow"
-     StrokeThickness="4"/>
+       
+
     </Grid>
 </Window>
